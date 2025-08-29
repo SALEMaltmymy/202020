@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="abstract" content="دليل أفضل المواقع ">
+    <meta name="description" content="دليل أفضل المواقع العربية والأجنبية مرتبة حسب عدد الزيارات " />
+    <meta name="keywords" content="دليل أفضل المواقع , الدليل الجامع , 202020" />
+    <title>دليل أفضل المواقع</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #343a40;
+            --border-color: #dee2e6;
+            --hover-color: #e9ecef;
+        }
+
+        body {
+            font-family: 'Almarai', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        header nav {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .dock-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .dock-item {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            width: 80px;
+        }
+
+        .dock-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .category-grid a img {
+            width: 80px;
+            height: 54px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        .search-box {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .search-box input {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 1px solid var(--border-color);
+            font-size: 1rem;
+            text-align: right;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .category-box {
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .sites-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .site-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.2s ease;
+        }
+        
+        .site-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .site-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+
+        .site-item span {
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <a href="/" target="_parent"><img src="logo_grreen_0.png" width="158" height="96" border="0" alt="شعار الموقع"></a>
+            </div>
+            <nav>
+                <a href="edu.html">تعليم</a> |
+                <a href="gov.html">خدمات</a> |
+                <a href="shopping.html">تسوق</a> |
+                <a href="traveling.html">سفر</a> |
+                <a href="biz.html">تجارة</a> |
+                <a href="english.html">لغة</a> |
+                <a href="search.html">بحث</a>
+            </nav>
+        </header>
+
+        <section class="dock-section">
+            <div class="dock-container">
+                <a class="dock-item" href="https://www.google.com.sa/maps" target="_blank">
+                    <img src="rr3.png" alt="خرائط">
+                    <span>خرائط</span>
+                </a>
+                <a class="dock-item" href="https://www.saudiexchange.sa" target="_blank">
+                    <img src="rr6.png" alt="تداول">
+                    <span>تداول</span>
+                </a>
+                <a class="dock-item" href="https://www.msn.com/ar-sa/weather/" target="_blank">
+                    <img src="rr8.png" alt="الطقس">
+                    <span>الطقس</span>
+                </a>
+                <a class="dock-item" href="https://www.xe.com/currencyconverter/" target="_blank">
+                    <img src="rr14.png" alt="تحويل عملة">
+                    <span>تحويل عملة</span>
+                </a>
+                <a class="dock-item" href="https://www.calculator.net/" target="_blank">
+                    <img src="rr2.png" alt="حاسبة">
+                    <span>حاسبة</span>
+                </a>
+                <a class="dock-item" href="https://www.speedtest.net/" target="_blank">
+                    <img src="rr7.png" alt="سرعة النت">
+                    <span>سرعة النت</span>
+                </a>
+                <a class="dock-item" href="https://translate.google.com/" target="_blank">
+                    <img src="rr13.png" alt="قاموس">
+                    <span>قاموس</span>
+                </a>
+                <a class="dock-item" href="https://www.timeanddate.com/worldclock/" target="_blank">
+                    <img src="rr4.png" alt="التوقيت">
+                    <span>التوقيت</span>
+                </a>
+                <a class="dock-item" href="https://www.timeanddate.com/calendar/?year=2025&country=74" target="_blank">
+                    <img src="rr5.png" alt="تقويم">
+                    <span>تقويم</span>
+                </a>
+                <a class="dock-item" href="http://www.ummulqura.org.sa/" target="_blank">
+                    <img src="rr1.png" alt="مواقيت الصلاة">
+                    <span>مواقيت الصلاة</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-grid">
+            <a href="">
+                <img src="aa10.png" alt="خدمات">
+                <span>خدمات</span>
+            </a>
+            <a href="">
+                <img src="aa12.png" alt="راديو">
+                <span>راديو</span>
+            </a>
+            <a href="booking.html" target="_blank">
+                <img src="aa14.png" alt="فنادق">
+                <span>فنادق</span>
+            </a>
+            <a href="">
+                <img src="aa11.png" alt="تلفزيون">
+                <span>تلفزيون</span>
+            </a>
+            <a href="">
+                <img src="aa2.png" alt="جامعات">
+                <span>جامعات</span>
+            </a>
+            <a href="">
+                <img src="aa1.png" alt="وزارات">
+                <span>وزارات</span>
+            </a>
+        </section>
+        
+        <div class="search-box">
+            <input type="text" size="45" placeholder="ابحث عن الموقع..." onkeyup="showResult(this.value)" />
+            <div id="livesearch"></div>
+        </div>
+
+        <section class="main-grid">
+            <div class="category-box">
+                <h3 class="category-title">أخبار</h3>
+                <div class="sites-list">
+                    <a href="https://sabq.org/" target="_blank" class="site-item">
+                        <img src="a1.png" alt="سبق">
+                        <span>سبق</span>
+                    </a>
+                    <a href="https://ajel.sa/" target="_blank" class="site-item">
+                        <img src="a2a.png" alt="عاجل">
+                        <span>عاجل</span>
+                    </a>
+                    <a href="https://www.almowaten.net/" target="_blank" class="site-item">
+                        <img src="a3.png" alt="المواطن">
+                        <span>المواطن</span>
+                    </a>
+                    <a href="https://www.slaati.com/" target="_blank" class="site-item">
+                        <img src="a4.png" alt="صحيفة صدى">
+                        <span>صدى</span>
+                    </a>
+                    <a href="https://www.akhbaar24.com/" target="_blank" class="site-item">
+                        <img src="a9a.png" alt="أخبار 24">
+                        <span>أخبار 24</span>
+                    </a>
+                    <a href="https://al-marsd.com/" target="_blank" class="site-item">
+                        <img src="a5.png" alt="المرصد">
+                        <span>المرصد</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">صحف</h3>
+                <div class="sites-list">
+                    <a href="https://www.alriyadh.com/" target="_blank" class="site-item">
+                        <img src="b1.png" alt="الرياض">
+                        <span>الرياض</span>
+                    </a>
+                    <a href="https://www.okaz.com.sa/" target="_blank" class="site-item">
+                        <img src="74.png" alt="عكاظ">
+                        <span>عكاظ</span>
+                    </a>
+                    <a href="https://www.al-madina.com/" target="_blank" class="site-item">
+                        <img src="b8.png" alt="المدينة">
+                        <span>المدينة</span>
+                    </a>
+                    <a href="https://www.al-jazirah.com/" target="_blank" class="site-item">
+                        <img src="b6.png" alt="الجزيرة">
+                        <span>الجزيرة</span>
+                    </a>
+                    <a href="https://aawsat.com/" target="_blank" class="site-item">
+                        <img src="b7.png" alt="الشرق الأوسط">
+                        <span>الشرق الأوسط</span>
+                    </a>
+                    <a href="https://www.alwatan.com.sa/" target="_blank" class="site-item">
+                        <img src="b3.png" alt="الوطن">
+                        <span>الوطن</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">قنوات</h3>
+                <div class="sites-list">
+                    <a href="https://www.alarabiya.net/" target="_blank" class="site-item">
+                        <img src="c1.png" alt="العربية">
+                        <span>العربية</span>
+                    </a>
+                    <a href="https://www.spa.gov.sa/" target="_blank" class="site-item">
+                        <img src="c5.png" alt="واس">
+                        <span>واس</span>
+                    </a>
+                    <a href="https://arabic.cnn.com/" target="_blank" class="site-item">
+                        <img src="c4a.png" alt="CNN Arabic">
+                        <span>CNN</span>
+                    </a>
+                    <a href="https://arabic.rt.com/" target="_blank" class="site-item">
+                        <img src="c23.png" alt="روسيا اليوم">
+                        <span>روسيا اليوم</span>
+                    </a>
+                    <a href="https://www.skynewsarabia.com/" target="_blank" class="site-item">
+                        <img src="c2a.png" alt="سكاي نيوز عربية">
+                        <span>سكاي نيوز</span>
+                    </a>
+                    <a href="https://www.independentarabia.com/" target="_blank" class="site-item">
+                        <img src="a2b.png" alt="الإندبندنت عربية">
+                        <span>الإندبندنت</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">تواصل اجتماعي</h3>
+                <div class="sites-list">
+                    <a href="https://www.youtube.com/" target="_blank" class="site-item">
+                        <img src="d1.png" alt="يوتيوب">
+                        <span>يوتيوب</span>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="site-item">
+                        <img src="d2.png" alt="فيسبوك">
+                        <span>فيسبوك</span>
+                    </a>
+                    <a href="https://x.com/" target="_blank" class="site-item">
+                        <img src="x.png" alt="إكس">
+                        <span>إكس (تويتر)</span>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="site-item">
+                        <img src="d6.png" alt="انستغرام">
+                        <span>انستغرام</span>
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="site-item">
+                        <img src="d7.png" alt="واتساب">
+                        <span>واتساب</span>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" class="site-item">
+                        <img src="161.png" alt="تيك توك">
+                        <span>تيك توك</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">بريد إلكتروني</h3>
+                <div class="sites-list">
+                    <a href="https://mail.google.com/" target="_blank" class="site-item">
+                        <img src="e1.png" alt="جي ميل">
+                        <span>جي ميل</span>
+                    </a>
+                    <a href="https://mail.yahoo.com" target="_blank" class="site-item">
+                        <img src="e2.png" alt="بريد ياهو">
+                        <span>ياهو</span>
+                    </a>
+                    <a href="https://outlook.live.com" target="_blank" class="site-item">
+                        <img src="e3.png" alt="أوتلوك">
+                        <span>أوتلوك</span>
+                    </a>
+                    <a href="https://www.icloud.com/" target="_blank" class="site-item">
+                        <img src="e6.png" alt="آي كلاود">
+                        <span>آي كلاود</span>
+                    </a>
+                    <a href="https://www.zoho.com/ar/mail" target="_blank" class="site-item">
+                        <img src="35.png" alt="زوهو ميل">
+                        <span>زوهو ميل</span>
+                    </a>
+                    <a href="https://protonmail.com/" target="_blank" class="site-item">
+                        <img src="58.png" alt="بروتون ميل">
+                        <span>بروتون ميل</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">حجوزات</h3>
+                <div class="sites-list">
+                    <a href="https://www.booking.com/index.ar.html?aid=1543796" target="_blank" class="site-item">
+                        <img src="x14.jpg" alt="بوكينغ">
+                        <span>بوكينغ</span>
+                    </a>
+                    <a href="https://www.agoda.com" target="_blank" class="site-item">
+                        <img src="k25.png" alt="أغودا">
+                        <span>أغودا</span>
+                    </a>
+                    <a href="https://ar.hotels.com/" target="_blank" class="site-item">
+                        <img src="39.png" alt="هوتيلز">
+                        <span>هوتيلز</span>
+                    </a>
+                    <a href="https://www.airbnb.com" target="_blank" class="site-item">
+                        <img src="k33.png" alt="إير بي إن بي">
+                        <span>إير بي إن بي</span>
+                    </a>
+                    <a href="https://www.almosafer.com/ar" target="_blank" class="site-item">
+                        <img src="k8.png" alt="المسافر">
+                        <span>المسافر</span>
+                    </a>
+                    <a href="https://www.flyin.com/" target="_blank" class="site-item">
+                        <img src="k14.png" alt="فلاي إن">
+                        <span>فلاي إن</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">طيران</h3>
+                <div class="sites-list">
+                    <a href="https://www.saudia.com/" target="_blank" class="site-item">
+                        <img src="saudia_new_logo.png" alt="السعودية">
+                        <span>السعودية</span>
+                    </a>
+                    <a href="https://www.flynas.com/ar" target="_blank" class="site-item">
+                        <img src="k2a.png" alt="طيران ناس">
+                        <span>طيران ناس</span>
+                    </a>
+                    <a href="https://www.flyadeal.com/ar/" target="_blank" class="site-item">
+                        <img src="k4.png" alt="طيران أديل">
+                        <span>طيران أديل</span>
+                    </a>
+                    <a href="https://sa.wego.com/" target="_blank" class="site-item">
+                        <img src="wego.png" alt="ويجو">
+                        <span>ويجو</span>
+                    </a>
+                    <a href="https://www.skyscanner.com.sa/" target="_blank" class="site-item">
+                        <img src="k30a.png" alt="سكاي سكانر">
+                        <span>سكاي سكانر</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">تسوق</h3>
+                <div class="sites-list">
+                    <a href="https://haraj.com.sa" target="_blank" class="site-item">
+                        <img src="g1.png" alt="حراج">
+                        <span>حراج</span>
+                    </a>
+                    <a href="https://www.amazon.sa" target="_blank" class="site-item">
+                        <img src="g9.png" alt="أمازون السعودية">
+                        <span>أمازون</span>
+                    </a>
+                    <a href="https://www.jarir.com/" target="_blank" class="site-item">
+                        <img src="g3.png" alt="جرير">
+                        <span>جرير</span>
+                    </a>
+                    <a href="https://www.extra.com/" target="_blank" class="site-item">
+                        <img src="73.png" alt="اكسترا">
+                        <span>اكسترا</span>
+                    </a>
+                    <a href="https://s.click.aliexpress.com/e/_AekIN1" target="_blank" class="site-item">
+                        <img src="g12.png" alt="علي اكسبرس">
+                        <span>علي اكسبرس</span>
+                    </a>
+                    <a href="https://www.noon.com" target="_blank" class="site-item">
+                        <img src="g22.png" alt="نون">
+                        <span>نون</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <h3 class="category-title">اتصالات</h3>
+                <div class="sites-list">
+                    <a href="https://www.stc.com.sa" target="_blank" class="site-item">
+                        <img src="32.png" alt="STC">
+                        <span>STC</span>
+                    </a>
+                    <a href="https://www.sa.zain.com/" target="_blank" class="site-item">
+                        <img src="o5.png" alt="زين">
+                        <span>زين</span>
+                    </a>
+                    <a href="https://www.mobily.com.sa/wps/portal/web/personal" target="_blank" class="site-item">
+                        <img src="o6.png" alt="موبايلي">
+                        <span>موبايلي</span>
+                    </a>
+                    <a href="https://www.jawwy.sa/ar" target="_blank" class="site-item">
+                        <img src="36.png" alt="جوّي">
+                        <span>جوّي</span>
+                    </a>
+                    <a href="https://salam.sa/" target="_blank" class="site-item">
+                        <img src="salam.png" alt="سلام">
+                        <span>سلام</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="category-box">
+                <h3 class="category-title">خدمات حكومية</h3>
+                <div class="sites-list">
+                    <a href="https://www.iam.gov.sa/" target="_blank" class="site-item">
+                        <img src="o33.png" alt="نفاذ">
+                        <span>نفاذ</span>
+                    </a>
+                    <a href="https://www.absher.sa/" target="_blank" class="site-item">
+                        <img src="o1.png" alt="أبشر">
+                        <span>أبشر</span>
+                    </a>
+                    <a href="https://najiz.sa/" target="_blank" class="site-item">
+                        <img src="84.png" alt="ناجز">
+                        <span>ناجز</span>
+                    </a>
+                    <a href="https://www.ejar.sa/" target="_blank" class="site-item">
+                        <img src="23.png" alt="إيجار">
+                        <span>إيجار</span>
+                    </a>
+                    <a href="https://balady.gov.sa/" target="_blank" class="site-item">
+                        <img src="88.png" alt="بلدي">
+                        <span>بلدي</span>
+                    </a>
+                    <a href="https://www.saudiexchange.sa/" target="_blank" class="site-item">
+                        <img src="n1.png" alt="تداول">
+                        <span>تداول</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="category-box">
+                <h3 class="category-title">بنوك</h3>
+                <div class="sites-list">
+                    <a href="https://www.alrajhibank.com.sa" target="_blank" class="site-item">
+                        <img src="f1b.png" alt="الراجحي">
+                        <span>الراجحي</span>
+                    </a>
+                    <a href="https://www.alahli.com" target="_blank" class="site-item">
+                        <img src="f2a.png" alt="الأهلي">
+                        <span>الأهلي</span>
+                    </a>
+                    <a href="https://www.anb.com.sa" target="_blank" class="site-item">
+                        <img src="anb.png" alt="العربي">
+                        <span>العربي</span>
+                    </a>
+                    <a href="https://www.riyadbank.com" target="_blank" class="site-item">
+                        <img src="rb2.png" alt="بنك الرياض">
+                        <span>الرياض</span>
+                    </a>
+                    <a href="https://www.alinma.com/" target="_blank" class="site-item">
+                        <img src="f11.png" alt="الإنماء">
+                        <span>الإنماء</span>
+                    </a>
+                    <a href="https://www.bankalbilad.com" target="_blank" class="site-item">
+                        <img src="f6.png" alt="بنك البلاد">
+                        <span>البلاد</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>www.202020.net © 2007-2025</p>
+            <p>جميع الحقوق محفوظة</p>
+            <p>info@202020.org</p>
+        </footer>
+    </div>
+    <script>
+        function showResult(str) {
+            if (str.length == 0) {
+                document.getElementById("livesearch").innerHTML = "";
+                return;
+            }
+            // Placeholder for a real-time search functionality.
+            console.log("Searching for: " + str);
+            document.getElementById("livesearch").innerHTML = "نتائج البحث لـ: " + str;
+        }
+    </script>
+</body>
+</html>
